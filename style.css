@@ -500,3 +500,45 @@ img{ max-width:100%; height:auto; display:block }
 :root:not(.dark) #experience .timeline-item::after{
 	background:#b9efff;
 }
+.experience-company{
+	font-size:1rem;
+	font-weight:600;
+	margin:0 0 3px;
+}
+.experience-meta{
+	font-size:.95rem;
+	margin:0 0 12px;
+	color:var(--muted-text);
+}
+.experience-points{
+	margin:0 0 12px;
+	padding-left:20px;
+	color:var(--muted-text);
+}
+.experience-points li{
+	margin-bottom:7px;
+	line-height:1.5;
+}
+:root:not(.dark) #experience .experience-company,
+:root:not(.dark) #experience .experience-meta,
+:root:not(.dark) #experience .experience-points{
+	color:#eef7ff;
+	text-shadow:0 1px 4px rgba(0,0,0,.85);
+}
+.dark #experience .experience-header h4,
+.dark #experience .edu-date,
+.dark #experience .edu-body h5{
+	color:#8eeaff;
+	text-shadow:0 0 10px rgba(70,210,255,.35);
+}
+.dark #experience .experience-company,
+.dark #experience .experience-meta,
+.dark #experience .experience-points,
+.dark #experience .edu-meta{
+	color:#e6f7ff;
+	text-shadow:0 1px 5px rgba(0,0,0,.9);
+}
+.dark #experience .timeline-item::after{
+	background:#4ddcff;
+	box-shadow:0 0 8px rgba(77,220,255,.7);
+}
