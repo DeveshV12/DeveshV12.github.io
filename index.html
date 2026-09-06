@@ -2,94 +2,288 @@
 
 <html>
 <head>
-	
 	<title>home page</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- AOS (Animate On Scroll) -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	
-<script data-ad-client="ca-pub-2870362174615416" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
+</head>
+
 <body>
-	<br>
+	<!-- Navigation -->
+	<nav class="site-nav">
+		<div class="container nav-inner">
+			<div class="brand">Devesh</div>
+			<button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+			<button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+			<ul class="nav-links" id="nav-links">
+				<li><a href="#hero">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="nav-spacer"></div>
+	<!-- Animated Hero Section -->
+	<section id="hero">
+		<div class="hero-inner container">
+			<div class="row align-items-center">
+				<div class="col-md-4 hero-profile" data-aos="fade-right">
+					<div class="card card-body h-100" id="profile-wrapper">
+						<img id="profile-pic" src="Images/devImag.jpg" alt="Devesh profile picture">
+						<hr>
+						<h4>Hi! I'm Devesh</h4>
+						<h6>Software Test Engineer<br>Manual &amp; Automation Testing</h6>
+					</div>
+				</div>
+				<div class="col-md-8 hero-left" data-aos="fade-left">
+					<h1 class="hero-title">Hi, I'm Devesh</h1>
+					<p class="hero-subtitle"><span id="typewriter"></span><span class="typewriter-cursor">|</span></p>
+					<p class="hero-desc">Automation Test Engineer focused on scalable test automation, Playwright & Selenium, API testing and AI-assisted testing workflows.</p>
+					<a class="btn btn-primary cta" href="#contact">Contact Me</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
-				<div class="card card-body h-100" id="profile-wrapper">
-					<img id="profile-pic" src="image.png">
-					<hr>
-					<h4>Hi! I'm Devesh </h4>
-					<h6><p>I love coding,and<br> I love to learn New Technologies.</p></h6>
-				</div>
-			</div>
-			<div class="col-md-9">
-				<div class="card card-body h-100">
-				<h4>Technical Skills</h4>
+					<div class="col-md-12">
+				<div class="card card-body h-100 about-main" id="about" data-aos="fade-up">
+							<h4>About</h4>
+							<hr>
+							<p>Automation Test Engineer | Selenium | C# | GitHub copilot | Azure AI Foundry (Agent creation, RAG) | API Testing | Playwright | AI-Powered Test Automation | Azure DevOps | QA Automation</p>
+							<p>Bengaluru, Karnataka, India · Contact info</p>
+							<p>Automation Test Engineer with experience in Selenium WebDriver, C#, API Testing, Azure DevOps, and Test Automation Framework development. Experienced in designing scalable automation solutions, improving regression efficiency, and collaborating with cross-functional teams.</p>
+							<p>Currently expanding into Playwright, AI-powered testing, and Intelligent Automation while exploring RPA and enterprise AI solutions.</p>
+							<p>Passionate about building reliable automation that improves software quality and accelerates delivery.</p>
+						</div>
+					</div>
+		</div>
+		<br>
+		<!-- Experience -->
+		<section id="experience" class="container" data-aos="fade-up">
+			<div class="experience-header">
+				<h4>Experience</h4>
 				<hr>
-				<p><b>JAVA</b><br>					
--Core JAVA(OPPS concepts,Multithreading,Exception Handeling,CollectionFrameWork.)
--Advanced JAVA,-J2EE (JDBC,SERVLETS,MVC)</p>
-<p><b>PYTHON</b><br>
-Special Datatypes,Collection ,Regular Expression,String,File Operations Exception Handling, Networking(Socket,Urllib),PDBC, Django</p>
-<p><b>SQL</b><br> (ORACLE DATABASE,MySql)
-</p>		
-				<ul class="socialmidea">
-					<li><img class="social" src="fb.png"></li>
-					<li><img class="social" src="insta.png"></li>
-				<li><img class="social" src="linkidin.png"</li>
-					<li><img class="social" src="youtube.png"</li>
-				</ul>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item" data-aos="fade-up">
+					<div class="edu-date">Jan 2022 – Present</div>
+					<div class="edu-card exp-card">
+						<div class="edu-body">
+							<h5>Automation Test Engineer — (Company Name)</h5>
+							<p>Designed and maintained Selenium and Playwright test suites, integrated tests into CI/CD pipelines, and improved regression efficiency through parallelization.</p>
+							<p class="edu-meta">Tech: Selenium, Playwright, C#, Azure DevOps</p>
+						</div>
+					</div>
 				</div>
-			</div>			
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h4>Area Of Intrest</h4>
-					<hr>
-					<ol>
-						<dt>Internet Of Things</dt>
-						<dt>Artificial Intelligence</dt>
-						<dt>Machine Learning</dt>
-						<dt>Web Development</dt>
-					<dt>Mobile Applications</dt>
-				</ol>
+				<div class="timeline-item" data-aos="fade-up" data-aos-delay="80">
+					<div class="edu-date">Jun 2019 – Dec 2021</div>
+					<div class="edu-card exp-card">
+						<div class="edu-body">
+							<h5>QA Engineer — (Previous Company)</h5>
+							<p>Executed manual and automated test plans, collaborated with developers on bug fixes, and contributed to test automation frameworks.</p>
+							<p class="edu-meta">Tech: API testing, TestNG, GitHub Actions</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h4>Professional Skills</h4>
-					<hr>					
-						<dt>Leadership</dt>
-						<dt>Smark Work</dt>
-						<dt>Quick Learning</dt>
-						<dt>Creativity</dt>				
-				</div>				
-			</div>			
-		</div>
+		</section>
+		<br>
+		<!-- Contact -->
+		<section id="contact" class="container" data-aos="fade-up">
+			<div class="card card-body h-100 contact-grid">
+				<div class="contact-info">
+					<h4>Contact</h4>
+					<hr>
+					<p>If you'd like to collaborate or discuss opportunities, send me a message below or email <a href="mailto:vendevesh33@gmail.com">vendevesh33@gmail.com</a>.</p>
+					<p>Bengaluru, Karnataka, India</p>
+					<p>Phone: <a href="tel:+919585675873">9585675873</a></p>
+					<p>LinkedIn: <a href="https://www.linkedin.com/in/devesh-v-7a7859327" target="_blank" rel="noopener">linkedin.com/in/devesh-v-7a7859327</a></p>
+				</div>
+				<!-- Contact form removed: use email/phone/LinkedIn links to reach out -->
+			</div>
+		</section>
 		<br>
 		<div class="row">
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h4>Hobbies</h4>
+			<div class="col-md-12">
+				<div class="card card-body h-100" id="education">
+					<h4>Education</h4>
 					<hr>
-					<p>Playing Cricket,FootBall<br></p>
-					<p>Listening Music<br></p>
-					<p>Cooking<br></p>
-					<p>Travelling<br></p>
+					<div class="timeline">
+						<div class="timeline-item" data-aos="fade-up">
+							<div class="edu-date">Oct 2015 – Oct 2019</div>
+							<div class="edu-card">
+								<div class="edu-body">
+									<h5>Er. Perumal Manimekalai College of Engineering</h5>
+									<p>Bachelor of Engineering - BE, Mechanical Engineering</p>
+									<p class="edu-meta">Grade: A · Java and SQL</p>
+								</div>
+							</div>
+						</div>
+						<div class="timeline-item" data-aos="fade-up" data-aos-delay="80">
+							<div class="edu-date">Aug 2013 – Apr 2015</div>
+							<div class="edu-card">
+								<div class="edu-body">
+									<h5>Trinity matric higher secondary school</h5>
+									<p>High School Diploma, Computer Science</p>
+									<p class="edu-meta">Grade: A · Java</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="card card-body h-100">
-					<h4>Click here To Check Proofs </h4>
-					<hr>
-				 <a class="btn btn-primary btn-lg" href="personalapp.html" role="button">Personal details here..</a><br>
-					 <br>
+		</div>
+		<br>
+		<section class="hobbies-tab" id="hobbies">
+			<button class="hobbies-trigger" type="button" aria-expanded="false" aria-controls="hobbies-panel">
+				Hobbies <span aria-hidden="true">+</span>
+			</button>
+			<div class="hobbies-panel" id="hobbies-panel">
+				<p>Playing Cricket</p>
+				<p>Listening Music</p>
+				<p>Cooking</p>
+				<p>Travelling</p>
+				<p>Health &amp; Fitness</p>
+				<p>Exploring AI Content</p>
+				<p>Exploring Financial Content</p>
+				<p>Driving</p>
+			</div>
+		</section>
+		<br>
+	</div>
 
- 				 <a class="btn btn-primary btn-lg" href="professionalapp.html" role="button">Professional details here..</a>
-				</div>
-			</div>			
-		</div>
-		<br>
-	</div>	
-</body>
+	<script>
+// Simple typewriter loop
+const phrases = [
+	'Automation Test Engineer',
+	'Selenium | Playwright | API Testing',
+	'Azure DevOps | AI-assisted Testing'
+];
+const el = document.getElementById('typewriter');
+let pIndex = 0, cIndex = 0, deleting = false;
+function tick(){
+	const current = phrases[pIndex];
+	if(!deleting){
+		el.textContent = current.slice(0, cIndex+1);
+		cIndex++;
+		if(cIndex === current.length){
+			deleting = true;
+			setTimeout(tick, 1200);
+			return;
+		}
+	} else {
+		el.textContent = current.slice(0, cIndex-1);
+		cIndex--;
+		if(cIndex === 0){
+			deleting = false;
+			pIndex = (pIndex + 1) % phrases.length;
+		}
+	}
+	setTimeout(tick, deleting ? 80 : 120);
+}
+document.addEventListener('DOMContentLoaded', ()=> tick());
+</script>
+
+<script>
+// Mobile nav toggle
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+if(navToggle){
+	navToggle.addEventListener('click', ()=>{
+		if(navLinks.style.display === 'flex') navLinks.style.display = 'none';
+		else navLinks.style.display = 'flex';
+	});
+}
+
+// Smooth scroll for in-page anchors
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+	a.addEventListener('click', function(e){
+		e.preventDefault();
+		const target = document.querySelector(this.getAttribute('href'));
+		if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+		if(navLinks && window.innerWidth <= 768) navLinks.style.display = 'none';
+	});
+});
+</script>
+
+<script>
+// Reveal project cards on scroll using IntersectionObserver
+const observer = new IntersectionObserver((entries)=>{
+	entries.forEach(entry=>{
+		if(entry.isIntersecting) entry.target.classList.add('in-view');
+	});
+},{ threshold: 0.12 });
+document.querySelectorAll('[data-animate]').forEach(el=> observer.observe(el));
+</script>
+
+<!-- AOS initialization -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true });
+</script>
+<script>
+// Theme toggle: persist in localStorage and apply class to documentElement
+const themeToggle = document.getElementById('theme-toggle');
+function updateAmbientRobots(theme){
+	document.querySelectorAll('.ambient-robot').forEach(robot=> robot.remove());
+	if(theme !== 'dark') return;
+	for(let index = 0; index < 7; index++){
+		const robot = document.createElement('span');
+		robot.className = 'ambient-robot';
+		robot.innerHTML = '<span class="robot-antenna"></span><span class="robot-head"><i></i><i></i></span><span class="robot-neck"></span><span class="robot-torso"></span><span class="robot-arm robot-arm-left"></span><span class="robot-arm robot-arm-right"></span><span class="robot-leg robot-leg-left"></span><span class="robot-leg robot-leg-right"></span>';
+		robot.style.left = (8 + index * 13) + '%';
+		robot.style.top = (12 + (index % 4) * 19) + '%';
+		robot.style.setProperty('--robot-delay', (-index * 3.2) + 's');
+		document.body.appendChild(robot);
+	}
+}
+function applyTheme(theme){
+	if(theme === 'dark') document.documentElement.classList.add('dark');
+	else document.documentElement.classList.remove('dark');
+	if(theme === 'dark') themeToggle.textContent = '☀️'; else themeToggle.textContent = '🌙';
+	updateAmbientRobots(theme);
+}
+// init
+const saved = localStorage.getItem('theme') || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+applyTheme(saved);
+if(themeToggle){
+	themeToggle.addEventListener('click', ()=>{
+		const newTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+		localStorage.setItem('theme', newTheme);
+		applyTheme(newTheme);
+	});
+}
+</script>
+<script>
+// Hobbies reveal on hover/focus and toggle on click
+const hobbiesTab = document.getElementById('hobbies');
+const hobbiesTrigger = document.querySelector('.hobbies-trigger');
+if(hobbiesTab && hobbiesTrigger){
+	 hobbiesTab.addEventListener('mouseenter', ()=> hobbiesTab.classList.add('is-open'));
+	 hobbiesTab.addEventListener('mouseleave', ()=> hobbiesTab.classList.remove('is-open'));
+	 hobbiesTrigger.addEventListener('focus', ()=> hobbiesTab.classList.add('is-open'));
+	 hobbiesTrigger.addEventListener('click', ()=>{
+		const open = hobbiesTab.classList.toggle('is-open');
+		hobbiesTrigger.setAttribute('aria-expanded', open);
+	 });
+}
+</script>
+<script>
+// Contact form handling: validate and open mailto as a fallback (no backend)
+// Contact form removed — no client-side form handling necessary
+</script>
+
+<script>
+// Interactive live background
+document.addEventListener('mousemove', function(event){
+	const x = (event.clientX / window.innerWidth) * 100;
+	const y = (event.clientY / window.innerHeight) * 100;
+	document.body.style.setProperty('--mouse-x', x + '%');
+	document.body.style.setProperty('--mouse-y', y + '%');
+});
+</script>
+	</body>
 </html>
