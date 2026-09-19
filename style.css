@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
 /* Theme tokens */
 :root{
 	--page-text:#172033;
@@ -541,4 +543,98 @@ img{ max-width:100%; height:auto; display:block }
 .dark #experience .timeline-item::after{
 	background:#4ddcff;
 	box-shadow:0 0 8px rgba(77,220,255,.7);
+}
+
+/* Glassmorphism visual system */
+:root{
+	--page-text:#edf6ff;
+	--muted-text:#b9cadb;
+	--surface:rgba(11,25,45,.52);
+	--surface-soft:rgba(18,39,66,.44);
+	--border:rgba(189,226,255,.22);
+	--accent:#9ce8ff;
+	--link:#8fe5ff;
+	--shadow:rgba(0,0,0,.28);
+	--glass-blur:18px;
+}
+
+html{ scroll-behavior:smooth }
+body{
+	font-family:'DM Sans', sans-serif;
+	background:#07111f!important;
+	letter-spacing:.01em;
+}
+body::before{
+	background:
+		radial-gradient(circle at 12% 18%, rgba(48,207,255,.22), transparent 27%),
+		radial-gradient(circle at 88% 76%, rgba(255,139,72,.18), transparent 25%),
+		linear-gradient(115deg, rgba(4,18,37,.62), rgba(8,14,27,.82)),
+		url("Images/digital-gear-wheels-on-circuit-board-high-technology-engineering-generative-ai-photo.jpg") center / cover no-repeat;
+	filter:saturate(1.08) brightness(.8);
+}
+body::after{ opacity:.12 }
+
+h1,h2,h3,h4,h5,h6,.brand,.nav-links{ font-family:'Space Grotesk', sans-serif }
+.site-nav,
+.hero-inner,
+.card,
+.hobbies-trigger,
+.hobbies-panel,
+.contact-grid{
+	background:linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.045))!important;
+	border:1px solid var(--border);
+	box-shadow:0 18px 45px rgba(0,0,0,.2), inset 0 1px 0 rgba(255,255,255,.13);
+	-webkit-backdrop-filter:blur(var(--glass-blur));
+	backdrop-filter:blur(var(--glass-blur));
+}
+.site-nav{
+	height:68px;
+	border-width:0 0 1px;
+	background:rgba(5,18,34,.68)!important;
+}
+.site-nav .brand{ color:#e9fbff }
+.site-nav .nav-links li a{ color:#cfe6f5; transition:color 180ms ease }
+.site-nav .nav-links li a:hover,
+.site-nav .nav-links li a:focus-visible{ color:#8fe5ff; text-decoration:none }
+#theme-toggle,#nav-toggle{ color:#dff8ff; border-radius:10px; transition:background 180ms ease, transform 180ms ease }
+#theme-toggle:hover,#nav-toggle:hover{ background:rgba(143,229,255,.12); transform:translateY(-1px) }
+.nav-spacer{ height:20px }
+
+#hero{ padding-top:26px }
+.hero-inner{ border-radius:24px; padding:34px; position:relative; overflow:hidden }
+.hero-inner::after{
+	content:""; position:absolute; width:180px; height:180px; right:-58px; top:-64px;
+	border-radius:50%; background:rgba(108,225,255,.12); filter:blur(4px); pointer-events:none;
+}
+#profile-wrapper{ background:rgba(255,255,255,.08)!important; border:0; box-shadow:none; border-radius:18px }
+#profile-pic{ border:3px solid rgba(162,237,255,.65); box-shadow:0 0 0 8px rgba(114,222,255,.08), 0 16px 28px rgba(0,0,0,.28) }
+.hero-title{ color:#f3fbff; font-size:clamp(2.25rem,5vw,4.5rem); line-height:1.03; letter-spacing:-.04em }
+.hero-subtitle{ color:#9ce8ff; font-weight:600 }
+.hero-desc,.card p,.contact-info p,.edu-body p,.hobbies-panel p{ color:#c4d4e2 }
+.cta{
+	background:#91e6ff; border-color:#91e6ff; color:#082137; font-weight:700;
+	box-shadow:0 10px 24px rgba(75,204,239,.2); transition:transform 180ms ease, box-shadow 180ms ease;
+}
+.cta:hover,.cta:focus-visible{ background:#c7f4ff; border-color:#c7f4ff; color:#082137; transform:translateY(-2px); box-shadow:0 14px 30px rgba(75,204,239,.32) }
+.about-main{ border-left:3px solid #8fe5ff; border-radius:18px; background:linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.045))!important }
+.about-main h4,.card h4,.experience-header h4,.contact-info h4{ color:#a4edff }
+.card hr,.about-main hr,#education hr{ border-color:rgba(189,226,255,.18) }
+.edu-card{ background:rgba(255,255,255,.045); border:1px solid rgba(189,226,255,.13); border-radius:16px; padding:18px 22px 18px 42px; transition:transform 180ms ease, background 180ms ease }
+.edu-card:hover{ transform:translateY(-3px); background:rgba(255,255,255,.09) }
+.edu-card::before{ left:12px; background:#91e6ff; border-color:#163b57; box-shadow:0 0 0 4px rgba(145,230,255,.12) }
+.timeline-item::after{ left:152px; background:rgba(145,230,255,.3) }
+.edu-date{ color:#a4edff }
+.experience-points{ list-style:disc; padding-left:20px; }
+.experience-points li::marker{ color:#91e6ff }
+.hobbies-trigger{ color:#dff8ff; border-radius:14px; }
+.hobbies-panel{ border-radius:0 0 14px 14px; }
+.contact-grid{ border-radius:18px; }
+.contact-info a,.about-main a{ color:#91e6ff; text-decoration:underline; text-underline-offset:3px }
+
+@media(max-width:768px){
+	.site-nav .nav-links{ top:68px; right:10px; background:rgba(8,24,43,.92)!important; border:1px solid var(--border); backdrop-filter:blur(18px); }
+	.hero-inner{ padding:22px; border-radius:18px }
+	.hero-title{ font-size:2.65rem }
+	.timeline-item::after{ left:6px }
+	.edu-card{ padding:16px 18px 16px 38px }
 }
