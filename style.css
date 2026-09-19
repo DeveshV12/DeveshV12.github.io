@@ -581,7 +581,7 @@ h1,h2,h3,h4,h5,h6,.brand,.nav-links{ font-family:'Space Grotesk', sans-serif }
 .hobbies-trigger,
 .hobbies-panel,
 .contact-grid{
-	background:linear-gradient(135deg, rgba(255,255,255,.22), rgba(134,204,255,.08))!important;
+	background:linear-gradient(135deg, rgba(208,241,255,.3), rgba(76,163,220,.14))!important;
 	border:1px solid rgba(203,240,255,.34);
 	box-shadow:0 18px 45px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.3), inset 0 -1px 0 rgba(111,214,255,.12);
 	-webkit-backdrop-filter:blur(24px) saturate(150%);
@@ -617,7 +617,7 @@ h1,h2,h3,h4,h5,h6,.brand,.nav-links{ font-family:'Space Grotesk', sans-serif }
 	box-shadow:0 10px 24px rgba(75,204,239,.2); transition:transform 180ms ease, box-shadow 180ms ease;
 }
 .cta:hover,.cta:focus-visible{ background:#c7f4ff; border-color:#c7f4ff; color:#082137; transform:translateY(-2px); box-shadow:0 14px 30px rgba(75,204,239,.32) }
-.about-main{ border-left:3px solid #8fe5ff; border-radius:18px; background:linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.045))!important }
+.about-main{ border-left:3px solid #8fe5ff; border-radius:18px; background:linear-gradient(135deg, rgba(208,241,255,.24), rgba(76,163,220,.1))!important }
 .about-main h4,.card h4,.experience-header h4,.contact-info h4{ color:#a4edff }
 .card hr,.about-main hr,#education hr{ border-color:rgba(189,226,255,.18) }
 .edu-card{ background:rgba(255,255,255,.045); border:1px solid rgba(189,226,255,.13); border-radius:16px; padding:18px 22px 18px 42px; transition:transform 180ms ease, background 180ms ease }
